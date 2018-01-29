@@ -2,17 +2,29 @@
 
 Simple http-server to test routing + templating capabilities
 
-#### building
+### compiling templates
+
+- ##### install qtc (quicktemplate compiler)
+```
+go get -u github.com/valyala/quicktemplate
+go get -u github.com/valyala/quicktemplate/qtc
+```
+- ##### run qtc
+```
+~/go/bin/qtc
+```
+
+### building
 ```
 go build [-o server]
 ```
 
-#### running
+### running
 ```
 go build -o server
 ./server
 ```
-OR
+*OR*
 ```
 go run server.go
 ```
